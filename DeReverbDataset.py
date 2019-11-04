@@ -1,3 +1,5 @@
+from imports import *
+
 class DeReverbDataset(Dataset):
     """
     Pytorch dataset for audio sequence to sequence tasks. 
@@ -21,7 +23,7 @@ class DeReverbDataset(Dataset):
             idx = idx.tolist()
         
         sfn = self.speech_files[idx]
-        speech, ssr = lr.load(sfn)
+        speech, ssr = ta.load(sfn)
         
         # Transforms change the clean speech, adding noise, reverb and 
         # other effects.
