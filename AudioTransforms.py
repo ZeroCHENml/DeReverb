@@ -60,7 +60,7 @@ class Reverb(object):
             self.irs = [x.cuda() for x in self.irs]
             
         # Crop beginning silence of IRS
-        crop_idxs = [x.abs().argmax(-1) for x in self.irs]
+        crop_idxs = [x.argmax(-1) for x in self.irs]
         self.irs = [x[crop_idxs[i]:].unsqueeze(0).unsqueeze(1) for i,x in enumerate(self.irs)]
     
     def __call__(self, speech):
