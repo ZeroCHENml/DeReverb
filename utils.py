@@ -14,3 +14,9 @@ def plot_spec(sig,sr=22050, channel=None):
         sig = sig[:,channel].squeeze()
     spec = db(abs(lr.stft(sig))) 
     specshow(spec, x_axis='time', y_axis='mel', sr=sr)
+    
+def cabs(x):
+    """
+    Takes the absolute value of a complex tensor for plotting etc.
+    """
+    return torch.sqrt(torch.sum(torch.pow(x, 2), dim=-1))
