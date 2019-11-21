@@ -64,7 +64,6 @@ class Reverb(object):
         self.irs = [x[crop_idxs[i]:].unsqueeze(0).unsqueeze(1) for i,x in enumerate(self.irs)]
     
     def __call__(self, speech):
-        
         ir = random.choice(self.irs)
         if ir.shape[-1] < speech.shape[-1]:
             padding = ir.shape[-1]
@@ -73,7 +72,7 @@ class Reverb(object):
             padding = speech.shape[-1]
             inputs, filters = ir, speech.unsqueeze(0).flip(-1)
             
-        return F.conv1d(inputs, filters, padding=padding)[0,:,:speech.shape[-1]]
+        return F.conv1d(inputs, filters, padding=padding)[0,:,:speech.shape[-1]].cpu()
         
         # TODO: replace this with torch.conv1d
         #return torch.Tensor(np.convolve(speech.squeeze().numpy(), ir.squeeze().numpy(), 'same')).unsqueeze(0)
@@ -102,3 +101,40 @@ class RandomCrop(object):
             retval = torch.zeros((1,self.crop_len))
             retval[:,0:speech.shape[-1]] = speech
             return retval
+
+class LoadCrop(object):
+    """ Similar to RandomCrop, but acts on loading the signal to save disk bandwidth.
+        About 20x faster in testing when using a frame length of 2048.
+    """
+    def __init__(self, length, no_rand=False):
+        """
+        Args:
+            length (int): length of returned clips in samples
+            no_rand (bool): if true will always start at beginning of clip. (default: False)
+        """
+        self.crop_len = length
+        self.no_rand = no_rand
+        
+    def __call__(self, fn):
+        si,_ = ta.info(str(fn))
+        
+        if self.no_rand:
+            start = 0
+        else:
+            start = random.randint(0, abs(si.length-self.crop_len-1))
+        
+            
+        try:
+            if si.length > (self.crop_len + start):
+                return ta.load(fn, num_frames=self.crop_len, offset=start)
+        except Exception as E:
+            pass
+            
+        # if problem happened above
+        speech,ssr = ta.load(fn)
+        if speech.shape[-1] < self.crop_len:
+            retval = torch.zeros((1,self.crop_len))
+            retval[:,0:speech.shape[-1]] = speech
+            return (retval, ssr)
+        else: # some other problem occurred reading a chunk of the file
+            return (speech[:,:self.crop_len], ssr)

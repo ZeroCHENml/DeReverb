@@ -10,6 +10,7 @@ class DeReverbDataset(Dataset):
                  noise_path='noise', 
                  rev_tfms=None, 
                  clean_tfms=None, 
+                 crop_load=None,
                  use_cuda=False):
         self.rp = Path(root_path)
         self.speech_files = (self.rp/speech_path).ls()
@@ -19,6 +20,11 @@ class DeReverbDataset(Dataset):
         self.clean_tfms = clean_tfms
         self.use_cuda = use_cuda
         
+        if crop_load:
+            self.loader = crop_load
+        else:
+            self.loader = ta.load
+        
     def __len__(self):
         return len(self.speech_files)
     
@@ -27,7 +33,7 @@ class DeReverbDataset(Dataset):
             idx = idx.tolist()
         
         sfn = self.speech_files[idx]
-        speech, ssr = ta.load(sfn)
+        speech, ssr = self.loader(sfn)
         
         # Transforms change the clean speech, adding noise, reverb and 
         # other effects.
@@ -35,7 +41,7 @@ class DeReverbDataset(Dataset):
             speech = self.clean_tfms(speech)
             
         if self.use_cuda:
-            speech = speech.cuda()
+            speech = speech.cuda(non_blocking=True)
             
         if self.rev_tfms:
             reverbed = self.rev_tfms(speech)
@@ -44,5 +50,5 @@ class DeReverbDataset(Dataset):
         
         reverbed = torch.Tensor(reverbed)
         speech = torch.Tensor(speech)
-        sample = {'reverbed': reverbed, 'clean': speech}
+        sample = (reverbed, speech)
         return sample
