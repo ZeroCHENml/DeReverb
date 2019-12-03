@@ -128,6 +128,7 @@ class LoadCrop(object):
             if si.length > (self.crop_len + start):
                 return ta.load(fn, num_frames=self.crop_len, offset=start)
         except Exception as E:
+            print(E)
             pass
             
         # if problem happened above
@@ -138,3 +139,14 @@ class LoadCrop(object):
             return (retval, ssr)
         else: # some other problem occurred reading a chunk of the file
             return (speech[:,:self.crop_len], ssr)
+        
+        
+class Normalize(object):
+    """ Normalizes a raw-audio waveform to the range specified
+    """
+    def __init__(self, max_abs_val=1, eps=1e-12):
+        self.eps = eps
+        self.max_abs_val = max_abs_val
+        
+    def __call__(self,x):
+        return self.max_abs_val * (x / (torch.max(torch.abs(x)) + self.eps))

@@ -1,2 +1,7 @@
 data/*
+figs/*
+samples/*
+*.pth
+
 __pycache__/*
+
