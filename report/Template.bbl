@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{pandey_new_2019}
+Ashutosh Pandey and DeLiang Wang,
+\newblock ``A {{New Framework}} for {{CNN}}-{{Based Speech Enhancement}} in the
+  {{Time Domain}},''
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, vol. 27, no. 7, pp. 1179--1188, July 2019.
+
+\bibitem{panayotov_librispeech_2015}
+Vassil Panayotov, Guoguo Chen, Daniel Povey, and Sanjeev Khudanpur,
+\newblock ``Librispeech: {{An ASR}} corpus based on public domain audio
+  books,''
+\newblock in {\em 2015 {{IEEE International Conference}} on {{Acoustics}},
+  {{Speech}} and {{Signal Processing}} ({{ICASSP}})}, {South Brisbane,
+  Queensland, Australia}, Apr. 2015, pp. 5206--5210, {IEEE}.
+
+\end{thebibliography}

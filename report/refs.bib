@@ -1,0 +1,133 @@
+
+@misc{noauthor_[1803.08243]_nodate,
+  title = {[1803.08243] {{Speech Dereverberation Using Fully Convolutional Networks}}},
+  howpublished = {https://arxiv.org/abs/1803.08243},
+  file = {/home/zach/Zotero/storage/USM86S7N/1803.html}
+}
+
+@article{pascual_segan_2017,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1703.09452},
+  primaryClass = {cs},
+  title = {{{SEGAN}}: {{Speech Enhancement Generative Adversarial Network}}},
+  shorttitle = {{{SEGAN}}},
+  abstract = {Current speech enhancement techniques operate on the spectral domain and/or exploit some higher-level feature. The majority of them tackle a limited number of noise conditions and rely on first-order statistics. To circumvent these issues, deep networks are being increasingly used, thanks to their ability to learn complex functions from large example sets. In this work, we propose the use of generative adversarial networks for speech enhancement. In contrast to current techniques, we operate at the waveform level, training the model end-to-end, and incorporate 28 speakers and 40 different noise conditions into the same model, such that model parameters are shared across them. We evaluate the proposed model using an independent, unseen test set with two speakers and 20 alternative noise conditions. The enhanced samples confirm the viability of the proposed model, and both objective and subjective evaluations confirm the effectiveness of it. With that, we open the exploration of generative architectures for speech enhancement, which may progressively incorporate further speech-centric design choices to improve their performance.},
+  journal = {arXiv:1703.09452 [cs]},
+  author = {Pascual, Santiago and Bonafonte, Antonio and Serr{\`a}, Joan},
+  month = jun,
+  year = {2017},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound,Computer Science - Neural and Evolutionary Computing},
+  file = {/home/zach/Zotero/storage/BTDKABB7/Pascual et al. - 2017 - SEGAN Speech Enhancement Generative Adversarial N.pdf;/home/zach/Zotero/storage/ZETCQMSJ/1703.html}
+}
+
+@misc{noauthor_[1807.03748]_nodate,
+  title = {[1807.03748] {{Representation Learning}} with {{Contrastive Predictive Coding}}},
+  howpublished = {https://arxiv.org/abs/1807.03748},
+  file = {/home/zach/Zotero/storage/SEPX2643/1807.html}
+}
+
+@inproceedings{liu_perceptually-weighted_2017,
+  address = {{Kos, Greece}},
+  title = {A Perceptually-Weighted Deep Neural Network for Monaural Speech Enhancement in Various Background Noise Conditions},
+  isbn = {978-0-9928626-7-1},
+  abstract = {Deep neural networks (DNN) have recently been shown to give state-of-the-art performance in monaural speech enhancement. However in the DNN training process, the perceptual difference between different components of the DNN output is not fully exploited, where equal importance is often assumed. To address this limitation, we have proposed a new perceptually-weighted objective function within a feedforward DNN framework, aiming to minimize the perceptual difference between the enhanced speech and the target speech. A perceptual weight is integrated into the proposed objective function, and has been tested on two types of output features: spectra and ideal ratio masks. Objective evaluations for both speech quality and speech intelligibility have been performed. Integration of our perceptual weight shows consistent improvement on several noise levels and a variety of different noise types.},
+  language = {en},
+  booktitle = {2017 25th {{European Signal Processing Conference}} ({{EUSIPCO}})},
+  publisher = {{IEEE}},
+  doi = {10.23919/EUSIPCO.2017.8081412},
+  author = {Liu, Qingju and Wang, Wenwu and Jackson, Philip J B and Tang, Yan},
+  month = aug,
+  year = {2017},
+  pages = {1270-1274},
+  file = {/home/zach/Downloads/Liu et al. - 2017 - A perceptually-weighted deep neural network for mo.pdf}
+}
+
+@article{pandey_new_2019,
+  title = {A {{New Framework}} for {{CNN}}-{{Based Speech Enhancement}} in the {{Time Domain}}},
+  volume = {27},
+  issn = {2329-9290, 2329-9304},
+  abstract = {This paper proposes a new learning mechanism for a fully convolutional neural network (CNN) to address speech enhancement in the time domain. The CNN takes as input the time frames of noisy utterance and outputs the time frames of the enhanced utterance. At the training time, we add an extra operation that converts the time domain to the frequency domain. This conversion corresponds to simple matrix multiplication, and is hence differentiable implying that a frequency domain loss can be used for training in the time domain. We use mean absolute error loss between the enhanced short-time Fourier transform (STFT) magnitude and the clean STFT magnitude to train the CNN. This way, the model can exploit the domain knowledge of converting a signal to the frequency domain for analysis. Moreover, this approach avoids the well-known invalid STFT problem since the proposed CNN operates in the time domain. Experimental results demonstrate that the proposed method substantially outperforms the other methods of speech enhancement. The proposed method is easy to implement and applicable to related speech processing tasks that require timefrequency masking or spectral mapping.},
+  language = {en},
+  number = {7},
+  journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  doi = {10.1109/TASLP.2019.2913512},
+  author = {Pandey, Ashutosh and Wang, DeLiang},
+  month = jul,
+  year = {2019},
+  pages = {1179-1188},
+  file = {/home/zach/Documents/Courses/dl/project/papers/Pandey and Wang - 2019 - A New Framework for CNN-Based Speech Enhancement i.pdf}
+}
+
+@article{ronneberger_u-net_2015,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1505.04597},
+  primaryClass = {cs},
+  title = {U-{{Net}}: {{Convolutional Networks}} for {{Biomedical Image Segmentation}}},
+  shorttitle = {U-{{Net}}},
+  abstract = {There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net .},
+  journal = {arXiv:1505.04597 [cs]},
+  author = {Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  month = may,
+  year = {2015},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/zach/Zotero/storage/3T7T3X4H/Ronneberger et al. - 2015 - U-Net Convolutional Networks for Biomedical Image.pdf;/home/zach/Zotero/storage/69X4VVF2/1505.html}
+}
+
+@inproceedings{taal_short-time_2010,
+  title = {A Short-Time Objective Intelligibility Measure for Time-Frequency Weighted Noisy Speech},
+  abstract = {Existing objective speech-intelligibility measures are suitable for several types of degradation, however, it turns out that they are less appropriate for methods where noisy speech is processed by a time-frequency (TF) weighting, e.g., noise reduction and speech separation. In this paper, we present an objective intelligibility measure, which shows high correlation (rho=0.95) with the intelligibility of both noisy, and TF-weighted noisy speech. The proposed method shows significantly better performance than three other, more sophisticated, objective measures. Furthermore, it is based on an intermediate intelligibility measure for short-time (approximately 400 ms) TF-regions, and uses a simple DFT-based TF-decomposition. In addition, a free Matlab implementation is provided.},
+  booktitle = {2010 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}}},
+  doi = {10.1109/ICASSP.2010.5495701},
+  author = {Taal, Cees H. and Hendriks, Richard C. and Heusdens, Richard and Jensen, Jesper},
+  month = mar,
+  year = {2010},
+  keywords = {Artificial intelligence,Degradation,intelligibility prediction,Noise measurement,noise reduction,Noise reduction,noisy speech,objective intelligibility measurement,objective speech-intelligibility measurement,Signal processing,speech enhancement,Speech enhancement,speech intelligibility,Speech processing,speech separation,Testing,Time frequency analysis,time-frequency weighted noisy speech,time-frequency weighting,Weight measurement},
+  pages = {4214-4217},
+  file = {/home/zach/Zotero/storage/ZLSQK64C/5495701.html},
+  issn = {1520-6149}
+}
+
+@inproceedings{rix_perceptual_2001,
+  title = {Perceptual Evaluation of Speech Quality ({{PESQ}})-a New Method for Speech Quality Assessment of Telephone Networks and Codecs},
+  volume = {2},
+  abstract = {Previous objective speech quality assessment models, such as bark spectral distortion (BSD), the perceptual speech quality measure (PSQM), and measuring normalizing blocks (MNB), have been found to be suitable for assessing only a limited range of distortions. A new model has therefore been developed for use across a wider range of network conditions, including analogue connections, codecs, packet loss and variable delay. Known as perceptual evaluation of speech quality (PESQ), it is the result of integration of the perceptual analysis measurement system (PAMS) and PSQM99, an enhanced version of PSQM. PESQ is expected to become a new ITU-T recommendation P.862, replacing P.861 which specified PSQM and MNB.},
+  booktitle = {2001 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}}, and {{Signal Processing}}. {{Proceedings}} ({{Cat}}. {{No}}.{{01CH37221}})},
+  doi = {10.1109/ICASSP.2001.941023},
+  author = {Rix, A.W. and Beerends, J.G. and Hollier, M.P. and Hekstra, A.P.},
+  month = may,
+  year = {2001},
+  keywords = {analogue connections,Degradation,Delay effects,delays,Distortion measurement,ITU-T recommendation P.862,measuring normalizing blocks,Nonlinear distortion,Nonlinear filters,objective speech quality assessment models,packet loss,packet switching,PAMS,perceptual analysis measurement system,perceptual evaluation of speech quality,perceptual speech quality measure,PSQM99,Quality assessment,Signal processing,Speech analysis,speech codecs,Speech codecs,speech intelligibility,telecommunication equipment testing,telephone networks,Telephony,variable delay},
+  pages = {749-752 vol.2},
+  file = {/home/zach/Zotero/storage/T37HE6UU/941023.html},
+  issn = {1520-6149}
+}
+
+@article{defossez_music_nodate,
+  title = {{{MUSIC SOURCE SEPARATION IN THE WAVEFORM DOMAIN}}},
+  abstract = {Source separation for music is the task of isolating contributions, or stems, from different instruments recorded individually and arranged together to form a song. Such components include voice, bass, drums and any other accompaniments. Contrarily to many audio synthesis tasks where the best performances are achieved by models that directly generate the waveform, the state-of-the-art in source separation for music is to compute masks on the magnitude spectrum. In this paper, we first show that an adaptation of Conv-Tasnet (Luo \& Mesgarani, 2019), a waveform-to-waveform model for source separation for speech, significantly beats the state-of-the-art on the MusDB dataset, the standard benchmark of multi-instrument source separation. Second, we observe that Conv-Tasnet follows a masking approach on the input signal, which has the potential drawback of removing parts of the relevant source without the capacity to reconstruct it. We propose Demucs, a new waveform-towaveform model, which has an architecture closer to models for audio generation with more capacity on the decoder. Experiments on the MusDB dataset show that Demucs beats previously reported results in terms of signal to distortion ratio (SDR), but lower than Conv-Tasnet. Human evaluations show that Demucs has significantly higher quality (as assessed by mean opinion score) than Conv-Tasnet, but slightly more contamination from other sources, which explains the difference in SDR. Additional experiments with a larger dataset suggest that the gap in SDR between Demucs and Conv-Tasnet shrinks, showing that our approach is promising.},
+  language = {en},
+  author = {D{\'e}fossez, Alexandre and Bach, Francis and Usunier, Nicolas and Bottou, L{\'e}on},
+  pages = {15},
+  file = {/home/zach/Downloads/Défossez et al. - MUSIC SOURCE SEPARATION IN THE WAVEFORM DOMAIN.pdf}
+}
+
+@inproceedings{panayotov_librispeech_2015,
+  address = {{South Brisbane, Queensland, Australia}},
+  title = {Librispeech: {{An ASR}} Corpus Based on Public Domain Audio Books},
+  isbn = {978-1-4673-6997-8},
+  shorttitle = {Librispeech},
+  abstract = {This paper introduces a new corpus of read English speech, suitable for training and evaluating speech recognition systems. The LibriSpeech corpus is derived from audiobooks that are part of the LibriVox project, and contains 1000 hours of speech sampled at 16 kHz. We have made the corpus freely available for download, along with separately prepared language-model training data and pre-built language models. We show that acoustic models trained on LibriSpeech give lower error rate on the Wall Street Journal (WSJ) test sets than models trained on WSJ itself. We are also releasing Kaldi scripts that make it easy to build these systems.},
+  language = {en},
+  booktitle = {2015 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  publisher = {{IEEE}},
+  doi = {10.1109/ICASSP.2015.7178964},
+  author = {Panayotov, Vassil and Chen, Guoguo and Povey, Daniel and Khudanpur, Sanjeev},
+  month = apr,
+  year = {2015},
+  pages = {5206-5210},
+  file = {/home/zach/Zotero/storage/V6MQ9IHR/Panayotov et al. - 2015 - Librispeech An ASR corpus based on public domain .pdf}
+}
+
+

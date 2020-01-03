@@ -1,0 +1,8 @@
+The training data consists of a subset of the LibriSpeech dataset \cite{panayotov_librispeech_2015} which is processed according to the pipeline shown in figure \ref{fig:data_pipeline}. Both models are trained on this data for 15 epochs using the Adam optimizer. Training is stopped at this point because losses have largely stopped decreasing and training is slow because of large file sizes of inputs.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{data_pipeline}
+	\caption{Data pipeline}
+	\label{fig:data_pipeline}
+\end{figure}

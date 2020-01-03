@@ -1,6 +1,7 @@
 data/*
 figs/*
 samples/*
+*.zip
 *.pth
 *.ipynb_checkpoints
 
