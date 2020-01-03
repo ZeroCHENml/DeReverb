@@ -126,7 +126,9 @@ class LoadCrop(object):
             
         try:
             if si.length > (self.crop_len + start):
-                return ta.load(fn, num_frames=self.crop_len, offset=start)
+                retval, ssr = ta.load(fn, num_frames=self.crop_len, offset=start)
+                if retval.shape[1] == self.crop_len:
+                    return (retval, ssr)
         except Exception as E:
             print(E)
             pass
@@ -136,6 +138,8 @@ class LoadCrop(object):
         if speech.shape[-1] < self.crop_len:
             retval = torch.zeros((1,self.crop_len))
             retval[:,0:speech.shape[-1]] = speech
+            assert(retval.shape[1] == self.crop_len)
+                
             return (retval, ssr)
         else: # some other problem occurred reading a chunk of the file
             return (speech[:,:self.crop_len], ssr)
