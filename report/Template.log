@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.22)  3 JAN 2020 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.22)  3 JAN 2020 20:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -473,18 +473,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 22.
  (./Template.aux)
-Runaway argument?
-{{5}{3}{Spectrograms of Reconstructed Example\relax }{figur 
-./Template.tex:63: File ended while scanning use of \@newl@bel.
-<inserted text> 
-                \par 
-l.63 \begin{document}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
 \openout1 = `Template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -502,7 +490,7 @@ LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -550,7 +538,7 @@ LaTeX Info: Redefining \nameref on input line 63.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
-<figures/github.png, id=7, 513.92pt x 513.92pt>
+<figures/github.png, id=31, 513.92pt x 513.92pt>
 File: figures/github.png Graphic file (type png)
 <use figures/github.png>
 Package pdftex.def Info: figures/github.png  used on input line 71.
@@ -574,11 +562,11 @@ Package acronym Info: Label `acro:ASR' newly defined as it shall be overridden
 although it is yet undefined on input line 1.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 1.
 ) (./model_arch/model_arch.tex
-<figures/architecture.pdf, id=10, 635.4942pt x 377.49028pt>
+<figures/architecture.pdf, id=34, 635.4942pt x 407.60278pt>
 File: figures/architecture.pdf Graphic file (type pdf)
 <use figures/architecture.pdf>
 Package pdftex.def Info: figures/architecture.pdf  used on input line 3.
-(pdftex.def)             Requested size: 253.22952pt x 150.41742pt.
+(pdftex.def)             Requested size: 253.22952pt x 162.41626pt.
 
 Overfull \hbox (8.53583pt too wide) in paragraph at lines 3--4
  [] 
@@ -586,12 +574,6 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 3--4
 
 Package acronym Info: Label `acro:LSTM' newly defined as it shall be overridden
 although it is yet undefined on input line 9.
-
-Package acronym Warning: Acronym `LSTM' is not defined on input line 9.
-
-
-Package acronym Warning: Acronym `LSTM' is not defined on input line 9.
-
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -613,7 +595,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 pdfTeX warning: pdflatex (file ./figures/architecture.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-<figures/systems_2.pdf, id=45, 406.3983pt x 148.6353pt>
+<figures/systems_2.pdf, id=67, 406.3983pt x 148.6353pt>
 File: figures/systems_2.pdf Graphic file (type pdf)
 <use figures/systems_2.pdf>
 Package pdftex.def Info: figures/systems_2.pdf  used on input line 13.
@@ -624,7 +606,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 13--14
  []
 
 ) (./data/data.tex
-<figures/data_pipeline.pdf, id=48, 406.3983pt x 190.7928pt>
+<figures/data_pipeline.pdf, id=70, 406.3983pt x 190.7928pt>
 File: figures/data_pipeline.pdf Graphic file (type pdf)
 <use figures/data_pipeline.pdf>
 Package pdftex.def Info: figures/data_pipeline.pdf  used on input line 5.
@@ -639,30 +621,8 @@ Underfull \vbox (badness 1603) has occurred while \output is active []
 
 Package acronym Info: Label `acro:MSE' newly defined as it shall be overridden
 although it is yet undefined on input line 1.
-
-
-Package acronym Warning: Acronym `MSE' is not defined on input line 1.
-
-
-Package acronym Warning: Acronym `MSE' is not defined on input line 1.
-
-
-Package acronym Warning: Acronym `MSE' is not defined on input line 1.
-
-
-Package acronym Warning: Acronym `MSE' is not defined on input line 1.
-
-
-Package acronym Warning: Acronym `MSE' is not defined on input line 1.
-
-
-Package acronym Warning: Acronym `MSE' is not defined on input line 1.
-
-
-Package acronym Warning: Acronym `MSE' is not defined on input line 3.
-
 ) (./results/results.tex
-<figures/metrics.pdf, id=49, 377.49028pt x 154.6578pt>
+<figures/metrics.pdf, id=71, 377.49028pt x 154.6578pt>
 File: figures/metrics.pdf Graphic file (type pdf)
 <use figures/metrics.pdf>
 Package pdftex.def Info: figures/metrics.pdf  used on input line 3.
@@ -677,20 +637,16 @@ Overfull \hbox (8.544pt too wide) in paragraph at lines 12--22
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:specs' on page 2 undefined on input line 24.
-
+Package acronym Info: Label `acro:WOLA' newly defined as it shall be overridden
+although it is yet undefined on input line 24.
 [2 <./figures/systems_2.pdf
 
 pdfTeX warning: pdflatex (file ./figures/systems_2.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 > <./figures/data_pipeline.pdf
 
 pdfTeX warning: pdflatex (file ./figures/data_pipeline.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
-> <./figures/metrics.pdf
-
-pdfTeX warning: pdflatex (file ./figures/metrics.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-<../../project/figs/specs2.png, id=94, 839.41605pt x 716.13547pt>
+<../../project/figs/specs2.png, id=105, 839.41605pt x 716.13547pt>
 File: ../../project/figs/specs2.png Graphic file (type png)
 <use ../../project/figs/specs2.png>
 Package pdftex.def Info: ../../project/figs/specs2.png  used on input line 28.
@@ -700,42 +656,33 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
-) (./Template.bbl) [3 <../../project/figs/specs2.png>]
+) (./Template.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+ [3 <./figures/metrics.pdf
+
+pdfTeX warning: pdflatex (file ./figures/metrics.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+> <../../project/figs/specs2.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./Template.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
-
-
-Package rerunfilecheck Warning: File `Template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Template.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  ACF70F80D69A0F876C8FC068A9D19F90;275.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `Template.out' has not changed.
+(rerunfilecheck)             Checksum: ACF70F80D69A0F876C8FC068A9D19F90;275.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 17862 strings out of 494847
- 333684 string characters out of 6179080
- 398048 words of memory out of 5000000
- 20816 multiletter control sequences out of 15000+600000
+ 17883 strings out of 494847
+ 333930 string characters out of 6179080
+ 398336 words of memory out of 5000000
+ 20834 multiletter control sequences out of 15000+600000
  21530 words of font info for 47 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  62i,10n,94p,1700b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (3 pages, 16376874 bytes).
+Output written on Template.pdf (3 pages, 16378142 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
