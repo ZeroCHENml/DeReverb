@@ -2,6 +2,7 @@ data/*
 figs/*
 samples/*
 *.pth
+*.ipynb_checkpoints
 
 __pycache__/*
 

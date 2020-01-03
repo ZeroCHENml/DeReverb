@@ -72,10 +72,10 @@ class Reverb(object):
             padding = speech.shape[-1]
             inputs, filters = ir, speech.unsqueeze(0).flip(-1)
             
-        return F.conv1d(inputs, filters, padding=padding)[0,:,:speech.shape[-1]].cpu()
+        #return F.conv1d(inputs, filters, padding=padding)[0,:,:speech.shape[-1]].cpu()
         
         # TODO: replace this with torch.conv1d
-        #return torch.Tensor(np.convolve(speech.squeeze().numpy(), ir.squeeze().numpy(), 'same')).unsqueeze(0)
+        return torch.Tensor(np.convolve(speech.squeeze().numpy(), ir.squeeze().numpy(), 'same')).unsqueeze(0)
 
 class RandomCrop(object):
     """ Crop sample to fixed length starting at random position. Pads with zeros if sample not long enough.
