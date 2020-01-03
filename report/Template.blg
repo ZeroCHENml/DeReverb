@@ -3,44 +3,48 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Template.aux
 The style file: IEEEbib.bst
 Database file #1: refs.bib
-You've used 2 entries,
+Warning--empty journal in defossez_music_nodate
+Warning--empty year in defossez_music_nodate
+Warning--empty author in noauthor_iso_2003
+You've used 8 entries,
             1838 wiz_defined-function locations,
-            471 strings with 4056 characters,
-and the built_in function-call counts, 683 in all, are:
-= -- 63
-> -- 22
-< -- 1
-+ -- 8
-- -- 6
-* -- 57
-:= -- 100
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 2
+            502 strings with 4986 characters,
+and the built_in function-call counts, 1863 in all, are:
+= -- 161
+> -- 75
+< -- 3
++ -- 28
+- -- 20
+* -- 137
+:= -- 280
+add.period$ -- 8
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 31
-empty$ -- 65
-format.name$ -- 6
-if$ -- 160
+cite$ -- 11
+duplicate$ -- 95
+empty$ -- 181
+format.name$ -- 20
+if$ -- 435
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 2
-pop$ -- 6
+int.to.str$ -- 8
+missing$ -- 8
+newline$ -- 42
+num.names$ -- 7
+pop$ -- 31
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 19
+skip$ -- 55
 stack$ -- 0
-substring$ -- 63
-swap$ -- 13
-text.length$ -- 1
+substring$ -- 95
+swap$ -- 32
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 5
-width$ -- 3
-write$ -- 26
+warning$ -- 3
+while$ -- 13
+width$ -- 9
+write$ -- 86
+(There were 3 warnings)

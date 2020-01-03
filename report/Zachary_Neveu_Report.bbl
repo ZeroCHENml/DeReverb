@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+
+\bibitem{buchholz}
+J.~Buchholz, International~Symposium on~Audiological, and Auditory Research,
+\newblock {\em Binaural Processing and Spatial Hearing},
+\newblock {Danavox Jubilee Foundation}, {Ballerup}, 2010.
+
+\bibitem{ronneberger_u-net_2015}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox,
+\newblock ``U-{{Net}}: {{Convolutional Networks}} for {{Biomedical Image
+  Segmentation}},''
+\newblock {\em arXiv:1505.04597 [cs]}, May 2015.
+
+\bibitem{pandey_new_2019}
+Ashutosh Pandey and DeLiang Wang,
+\newblock ``A {{New Framework}} for {{CNN}}-{{Based Speech Enhancement}} in the
+  {{Time Domain}},''
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, vol. 27, no. 7, pp. 1179--1188, July 2019.
+
+\bibitem{defossez_music_nodate}
+Alexandre D{\'e}fossez, Francis Bach, Nicolas Usunier, and L{\'e}on Bottou,
+\newblock ``{{MUSIC SOURCE SEPARATION IN THE WAVEFORM DOMAIN}},''
+\newblock p.~15.
+
+\bibitem{panayotov_librispeech_2015}
+Vassil Panayotov, Guoguo Chen, Daniel Povey, and Sanjeev Khudanpur,
+\newblock ``Librispeech: {{An ASR}} corpus based on public domain audio
+  books,''
+\newblock in {\em 2015 {{IEEE International Conference}} on {{Acoustics}},
+  {{Speech}} and {{Signal Processing}} ({{ICASSP}})}, {South Brisbane,
+  Queensland, Australia}, Apr. 2015, pp. 5206--5210, {IEEE}.
+
+\bibitem{kingma_adam_2017}
+Diederik~P. Kingma and Jimmy Ba,
+\newblock ``Adam: {{A Method}} for {{Stochastic Optimization}},''
+\newblock {\em arXiv:1412.6980 [cs]}, Jan. 2017.
+
+\bibitem{noauthor_iso_2003}
+``{{ISO}} 226:2003,''
+\newblock Tech. {R}ep., {ISO}, 2003.
+
+\bibitem{windowSize}
+C.~Bor{\ss} and R.~Martin,
+\newblock ``On the construction of window functions with constant-overlap-add
+  constraint for arbitrary window shifts,''
+\newblock in {\em 2012 {{IEEE}} International Conference on Acoustics, Speech
+  and Signal Processing ({{ICASSP}})}, Mar. 2012, pp. 337--340.
+
+\end{thebibliography}

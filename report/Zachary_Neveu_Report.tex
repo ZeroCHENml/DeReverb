@@ -1,0 +1,116 @@
+% Template for ICASSP-2010 paper; to be used with:
+%          mlspconf.sty  - ICASSP/ICIP LaTeX style file adapted for MLSP, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass{article}
+\usepackage{amsmath,graphicx,02460}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zach added packages
+\usepackage{todonotes}
+\usepackage{acronym}
+\input{acronyms/acronyms.tex}
+\graphicspath{{figures/}}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\toappear{02456 Deep Learning, DTU Compute, Fall 2019}
+
+
+% Example definitions.
+% --------------------
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+
+% Title.
+% ------
+\title{Speech Dereverberation with U-Net Architectures}
+%
+% Single address.
+% ---------------
+\name{Zachary Neveu}
+\address{Technical University of Denmark}
+	
+%
+% For example:
+% ------------
+%\address{School\\
+%	Department\\
+%	Address}
+%
+% Two addresses (uncomment and modify for two-address case).
+% ----------------------------------------------------------
+%\twoauthors
+%  {A. Author-one, B. Author-two\sthanks{Thanks to XYZ agency for funding.}}
+%	{School A-B\\
+%	Department A-B\\
+%	Address A-B}
+%  {C. Author-three, D. Author-four\sthanks{The fourth author performed the work
+%	while at ...}}
+%	{School C-D\\
+%	Department C-D\\
+%	Address C-D}
+%
+\begin{document}
+%\ninept
+%
+
+\maketitle
+%
+
+\begin{center}
+\raisebox{-3pt}{\includegraphics[height=11pt]{figures/github.png}}\ \ \href{https://github.com/zacharyneveu/DeReverb}{\texttt{github.com/zacharyneveu/DeReverb}}
+\end{center}
+
+\begin{abstract}
+\input{abstract/abstract.tex}
+\end{abstract}
+%
+\begin{keywords}
+Speech, Enhancement, Reverb, Noise
+\end{keywords}
+%
+\section{Introduction}
+\label{sec:intro}
+\input{intro/intro.tex}
+
+\section{Model Architecture}%
+\label{sec:model_architecture}
+\input{model_arch/model_arch.tex}
+
+\section{Data}%
+\label{sec:data}
+\input{data/data.tex}
+
+\section{Training}%
+\label{sec:data_and_training}
+\input{training/training.tex}
+
+\section{Results}%
+\label{sec:results}
+\input{results/results.tex}
+
+\section{Conclusions}%
+\label{sec:conclusions}
+\input{conclusions/conclusions.tex}
+
+
+
+
+% References should be produced using the bibtex program from suitable
+% BiBTeX files (here: strings, refs, manuals). The IEEEbib.bst bibliography
+% style file from IEEE produces unsorted bibliography list.
+% -------------------------------------------------------------------------
+\bibliographystyle{IEEEbib}
+\bibliography{refs}
+
+\end{document}

@@ -271,9 +271,14 @@ INPUT ./figures/metrics.pdf
 INPUT ./figures/metrics.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT ../../project/figs/specs2.png
-INPUT ../../project/figs/specs2.png
-INPUT ../../project/figs/specs2.png
+INPUT figures/specs-percep.png
+INPUT ./figures/specs-percep.png
+INPUT ./figures/specs-percep.png
+INPUT figures/specs-time.png
+INPUT ./figures/specs-time.png
+INPUT ./figures/specs-time.png
+INPUT conclusions/conclusions.tex
+INPUT conclusions/conclusions.tex
 INPUT Template.bbl
 INPUT Template.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
